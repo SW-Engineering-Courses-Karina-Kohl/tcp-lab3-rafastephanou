@@ -27,14 +27,13 @@ public class Retangulo extends FiguraGeometrica {
     @Override
    public double calcularArea()
    {
-    double area = altura * largura;
-    return area;
+    return altura * largura;
    }
 
     @Override
    public double calcularPerimetro(){
-    double perimetro = (altura + largura) * 2;
-    return perimetro;
+   return (altura + largura) * 2;
+
    }
 
     @Override
@@ -42,5 +41,10 @@ public class Retangulo extends FiguraGeometrica {
     return "Retângulo";
    }
 
-   //get detalhes
+   @Override
+   public String getDetalhes(){
+    return "Tipo: " + getTipoFigura() + "\nCor: " + getCor() + "\nAltura: " + altura + "\nLargura: " + largura + "\nÁrea: " + calcularArea() + "\nPerímetro: " + calcularPerimetro();
+   }
+
+
 }

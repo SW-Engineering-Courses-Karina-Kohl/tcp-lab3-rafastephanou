@@ -30,10 +30,11 @@ public abstract class FiguraGeometrica implements CalculosGeometricos{
         this.cor = cor;
     }
 
-    public void setId(int id)
-    {
-        this.id = id;
+   public String getInfo(){
+        return String.format("id: %d - cor: %s", id, cor);
+}
+    public String getDetalhes(){
+        return String.format("id: %d - cor: %s", id, cor);
     }
-
 }
 

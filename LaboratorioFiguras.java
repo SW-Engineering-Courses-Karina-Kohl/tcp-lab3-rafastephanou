@@ -20,7 +20,7 @@ public class LaboratorioFiguras {
             System.out.printf("Perímetro: %.2f%n", figura.calcularPerimetro());
             System.out.println("-----------------------------------");
         }
-        
+            
         // Demonstrando atributo de classe
         System.out.println("Total de figuras criadas: " + FiguraGeometrica.getTotalFiguras());
         
